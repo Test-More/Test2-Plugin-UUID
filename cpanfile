@@ -1,4 +1,4 @@
-requires "Data::UUID" => "1.148";
+requires "Data::UUID" => "0";
 requires "Test2::API" => "1.302165";
 requires "perl" => "5.008009";
 

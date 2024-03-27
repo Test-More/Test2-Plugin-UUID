@@ -17,7 +17,7 @@ my %WriteMakefileArgs = (
   "MIN_PERL_VERSION" => "5.008009",
   "NAME" => "Test2::Plugin::UUID",
   "PREREQ_PM" => {
-    "Data::UUID" => "1.148",
+    "Data::UUID" => "0",
     "Test2::API" => "1.302165"
   },
   "TEST_REQUIRES" => {
@@ -31,7 +31,7 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "Data::UUID" => "1.148",
+  "Data::UUID" => "0",
   "Test2::API" => "1.302165",
   "Test2::V0" => "0.000124"
 );
