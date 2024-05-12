@@ -7,10 +7,21 @@ our $VERSION = '0.002003';
 use Test2::API qw/test2_add_uuid_via/;
 
 use Data::UUID;
-my $UG = Data::UUID->new;
+
+my ($UG, $UG_PID);
+
+sub UG {
+    return $UG if $UG && $UG_PID && $UG_PID == $$;
+
+    $UG_PID = $$;
+    return $UG = Data::UUID->new;
+}
+
+# Initialize it here in this PID to start
+UG();
 
 # OSSP::UUID (Debian) produces lowercase UUIDs, consistently uppercase.
-sub gen_uuid() { uc $UG->create_str() }
+sub gen_uuid() { uc UG()->create_str() }
 
 sub import {
     test2_add_uuid_via(\&gen_uuid);
