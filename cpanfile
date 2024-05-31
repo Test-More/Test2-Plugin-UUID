@@ -10,6 +10,7 @@ suggests "UUID" => "0.35";
 
 on 'test' => sub {
   requires "Test2::Require::Module" => "0.000162";
+  requires "Test2::Util::Table" => "0.000162";
   requires "Test2::V0" => "0.000162";
 };
 

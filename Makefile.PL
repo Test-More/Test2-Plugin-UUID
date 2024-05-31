@@ -22,6 +22,7 @@ my %WriteMakefileArgs = (
   },
   "TEST_REQUIRES" => {
     "Test2::Require::Module" => "0.000162",
+    "Test2::Util::Table" => "0.000162",
     "Test2::V0" => "0.000162"
   },
   "VERSION" => "0.002005",
@@ -34,6 +35,7 @@ my %WriteMakefileArgs = (
 my %FallbackPrereqs = (
   "Test2::API" => "1.302165",
   "Test2::Require::Module" => "0.000162",
+  "Test2::Util::Table" => "0.000162",
   "Test2::V0" => "0.000162",
   "UUID::Tiny" => "1.04"
 );
