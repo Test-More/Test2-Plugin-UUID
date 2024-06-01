@@ -2,7 +2,7 @@ package Test2::Util::UUID;
 use strict;
 use warnings;
 
-our $VERSION = '0.002007';
+our $VERSION = '0.002008';
 
 use Carp qw/croak/;
 
