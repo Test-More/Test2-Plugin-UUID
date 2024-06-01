@@ -3,7 +3,7 @@
 
 requires "Test2::API" => "1.302165";
 requires "UUID::Tiny" => "1.04";
-requires "perl" => "5.008009";
+requires "perl" => "5.010000";
 suggests "Data::UUID" => "1.227";
 suggests "Data::UUID::MT" => "1.001";
 suggests "UUID" => "0.35";

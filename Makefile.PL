@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-use 5.008009;
+use 5.010000;
 
 use ExtUtils::MakeMaker;
 
@@ -14,7 +14,7 @@ my %WriteMakefileArgs = (
   },
   "DISTNAME" => "Test2-Plugin-UUID",
   "LICENSE" => "perl",
-  "MIN_PERL_VERSION" => "5.008009",
+  "MIN_PERL_VERSION" => "5.010000",
   "NAME" => "Test2::Plugin::UUID",
   "PREREQ_PM" => {
     "Test2::API" => "1.302165",
