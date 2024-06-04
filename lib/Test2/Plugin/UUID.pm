@@ -19,13 +19,13 @@ sub import {
 sub apply_plugin {
     my $class = shift;
 
-    my ($gen_uuid, $backend) = Test2::Util::UUID->get_gen_uuid(@_);
+    my $subs = Test2::Util::UUID->get_gen_uuid(@_);
 
-    test2_add_uuid_via($gen_uuid);
+    test2_add_uuid_via($subs->{gen_uuid});
     require Test2::Hub;
     Test2::Hub->new; # Make sure the UUID generator is found
 
-    return $backend->();
+    return $subs->{GEN_UUID_BACKEND}->();
 }
 
 1;
