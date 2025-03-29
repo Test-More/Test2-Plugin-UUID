@@ -25,7 +25,7 @@ my %WriteMakefileArgs = (
     "Test2::Util::Table" => "0.000162",
     "Test2::V0" => "0.000162"
   },
-  "VERSION" => "0.002010",
+  "VERSION" => "0.002011",
   "test" => {
     "TESTS" => "t/*.t"
   }
